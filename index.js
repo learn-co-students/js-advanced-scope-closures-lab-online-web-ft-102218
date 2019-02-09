@@ -1,5 +1,5 @@
 function produceDrivingRange(range){
-  return function(start, end) {
+  return (start, end) => { // New arrow function with two args
     let x = parseInt(start);
     let y = parseInt(end);
     let difference = y - x;
@@ -13,9 +13,7 @@ function produceDrivingRange(range){
 }
 
 function produceTipCalculator(percent) {
-  return function(amount) {
-    return amount * percent;
-  };
+  return amount => amount * percent; // One line arrow function with one arg
 }
 
 function createDriver(){
